@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.louis.fileGenerator.dao.FileDataDAO">
+	<select id="selectStoredFileData" parameterType="java.util.Map"  resultType="java.util.Map">
+		select * from
+		${dataTable} where
+		MERCHANT_TYPE = ${busiLine}
+		and SETTLE_DATE = ${settleDate}
+		<if test="fileType != 0 and fileType != 1">and PROVINCE = ${province}</if>
+		and ROWNUM &lt; ${dataSum}
+	</select>
+</mapper>

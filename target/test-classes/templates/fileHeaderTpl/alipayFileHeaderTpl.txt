@@ -1,0 +1,1 @@
+MIGUALIPAY|${TDay}141017|${fileDataSum}

@@ -1,0 +1,1 @@
+SETTLE0064${settleDate}${fileNo}.${province}.CMCC

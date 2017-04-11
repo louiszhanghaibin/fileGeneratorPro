@@ -1,0 +1,1 @@
+MIGUALIPAY${settleDate}${fileNo}.CMCC

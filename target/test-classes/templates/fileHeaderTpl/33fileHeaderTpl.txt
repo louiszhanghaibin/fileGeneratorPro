@@ -1,0 +1,1 @@
+10${fileNo}${fileSum}${TDay}00000001${fileDataSum}
