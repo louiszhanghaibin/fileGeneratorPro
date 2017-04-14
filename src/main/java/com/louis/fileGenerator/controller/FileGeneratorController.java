@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.alibaba.fastjson.JSON;
 import com.cmsz.cmup.commons.utils.SpringUtil;
@@ -124,7 +125,7 @@ public class FileGeneratorController {
 			if ("failed" == resultMap.get("result")) {
 				result = "【failed】生成文件失败！" + resultMap.get("resultDesc");
 			} else {
-				result = "[sucess!!!!!!!生成文件成功]";
+				result = "【sucess】生成" + resultMap.get("fileTypeDesc") + "成功！！！！";
 			}
 		}
 
@@ -144,7 +145,7 @@ public class FileGeneratorController {
 	 * @return
 	 */
 	@RequestMapping(value = "/getExistingId")
-	public String getExistingId() {
+	public @ResponseBody String getExistingId() {
 		List<FileTypeCfg> fileTypeCfgs = new ArrayList<>();
 		TemplateConfig templateConfig = (TemplateConfig) springUtil.getBean("templateConfig");
 		fileTypeCfgs = templateConfig.getFileTypeCfgs();

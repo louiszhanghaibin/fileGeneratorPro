@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tplConfig>
 
-	<fileType id="first">
-		<fileTypeDesc>first</fileTypeDesc>
+	<fileType>
+		<id>MGAlipayFile</id>
+		<fileTypeDesc>MGAlipayFile(咪咕支付宝文件)</fileTypeDesc>
 		<fileNameTpl>/templates/fileNameTpl/MGAlipayfileNameTpl.txt</fileNameTpl>
 		<fileHeaderTpl>/templates/fileHeaderTpl/33fileHeaderTpl.txt</fileHeaderTpl>
 		<fileBodyTpl>/templates/fileBodyTpl/MGAlipayfileBodyTpl.txt</fileBodyTpl>

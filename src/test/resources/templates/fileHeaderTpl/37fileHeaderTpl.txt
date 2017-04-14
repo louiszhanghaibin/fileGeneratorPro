@@ -1,1 +1,0 @@
-10${busiLine}${fileNo}${fileSum}${TDay}00000001${fileDataSum}

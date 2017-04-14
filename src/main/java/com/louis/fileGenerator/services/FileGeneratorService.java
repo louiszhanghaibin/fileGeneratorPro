@@ -24,7 +24,7 @@ public class FileGeneratorService extends AbstractBasicService implements BasicS
 		List<FileTypeCfg> fileTypeCfgs = templateConfig.getFileTypeCfgs();
 		int count = 0;
 		for (FileTypeCfg fileTypeCfg : fileTypeCfgs) {
-			if (id == fileTypeCfg.getId()) {
+			if (id.equals(fileTypeCfg.getId())) {
 				vMap.put("fileTypeDesc", fileTypeCfg.getFileTypeDesc());
 				vMap.put("dataTable", fileTypeCfg.getDataTable());
 				vMap.put("fileNameTpl", fileTypeCfg.getFileNameTpl());
@@ -52,13 +52,14 @@ public class FileGeneratorService extends AbstractBasicService implements BasicS
 
 		try {
 			super.fileGeneHandle(vMap);
+			vMap.put("result", "success");
 		} catch (Exception e) {
 			String msg = vMap.get("fileTypeDesc") + "文件生成出错，请稍后重试。。。";
 			System.out.println(msg);
 			throw e;
 		}
 
-		return null;
+		return vMap;
 	}
 
 }

@@ -20,6 +20,7 @@
 			</list>
 		</property>
 	</bean>
+
 	<!-- 引入属性文件 -->
 	<context:property-placeholder location="classpath:config.properties" />
 
@@ -30,6 +31,7 @@
 	<import resource="spring-myBatis.xml" />
 	<import resource="spring-applicationContext.xml" />
 	<import resource="spring-datasource.xml" />
+
 
 	<bean name="templateConfig" class="com.louis.fileGenerator.config.TemplateConfig"
 		init-method="init">
