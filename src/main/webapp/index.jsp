@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>FileGenerator</title>
+ <script src="js/jquery.min.js"></script>
 	<script type="text/javascript">
 		function checkNull(id){
 			var obj = document.getElementById(id);
@@ -19,6 +20,20 @@
 		function trim(str){ //删除左右两端的空格
 			return str.replace(/(^\s*)|(\s*$)/g, "");
 		}
+		$(document).ready(function () {
+		    $.ajax({
+		        timeout: 3000,
+		        async: false,
+		        type: "POST",
+		        url: "/fileGeneratorPro/getExistingId",
+		        dataType: "json",
+		        success: function (data) {
+		            for (var i = 0; i < data.length; i++) {
+		                $("#idSelect").append("<option>" + data[i].id + "</option>");
+		            }
+		        }
+		    });
+		});
 	</script>
 </head>
 <body>
@@ -26,14 +41,15 @@
 	
 	
 	<h3>启动文件生成服务</h3>
-	<h5>fileGeneServiceId(文件生成服务ID):可选ID：咪咕省Boss对账文件生成服务：mGBossFileGeneService；咪咕对账日全量文件生成服务：mGSettleFileGeneService；咪咕支付宝文件生成服务：mGAlipayFileGeneService；咪咕统一支付日全量文件生成服务：mGUpayFileGeneService；</h5>
-	<h5>                                                                       咪咕在线计费省侧对账文件生成服务：mGZXJFBossFileGeneService；咪咕在线计费咪咕侧对账文件生成服务：mGZXJFMGFileGeneService；咪咕在线计费核检文件生成服务：dMGZXJFFileGeneService；</h5>
-	<h5>fileGeneMode(文件生成服务模式ID):可选模式：byXML(利用XML模板生成文件模式，默认为此选项)；byDataBase(依托数据库生成文件，要求数据库有足量测试数据已存在)</h5>
 	<form action="startGeneFiles" method="post" onsubmit="return checkNull('fileGeneServiceId')">
 		<table>
 			<tr>
-				<td align="right">fileGeneServiceId(文件生成服务ID):<span style="color: red">*</span></td>
-				<td align="left"><input  id="fileGeneServiceId" name="fileGeneServiceId" value="mGBossFileGeneService"></td>
+				<td align="right">fileGeneServiceId(文件生成服务ID，即文件配置中的id):<span style="color: red">*</span></td>
+				<td align="left">
+					<select name="idSelect" id="idSelect" >
+						<option value="1">first88888888888888</option>					
+					</select>
+				</td>
 			</tr>
 			<tr>
 				<td align="right">fileGeneMode(文件生成服务模式ID):<span style="color: red">*</span></td>

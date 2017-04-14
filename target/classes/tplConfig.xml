@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tplConfig>
+
+	<fileType id="first">
+		<fileTypeDesc>first</fileTypeDesc>
+		<fileNameTpl>/templates/fileNameTpl/MGAlipayfileNameTpl.txt</fileNameTpl>
+		<fileHeaderTpl>/templates/fileHeaderTpl/33fileHeaderTpl.txt</fileHeaderTpl>
+		<fileBodyTpl>/templates/fileBodyTpl/MGAlipayfileBodyTpl.txt</fileBodyTpl>
+		<fileBodyXmlTpl>templates/xmlFileBodyTpl/MGAlipayFileBodyXmlTpl.xml</fileBodyXmlTpl>
+		<fileEndTpl>/templates/fileEndTpl/33fileEndTpl.txt</fileEndTpl>
+	</fileType>
+	
+</tplConfig>

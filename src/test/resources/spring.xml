@@ -20,6 +20,7 @@
 			</list>
 		</property>
 	</bean>
+
 	<!-- 引入属性文件 -->
 	<context:property-placeholder location="classpath:config.properties" />
 
@@ -31,11 +32,9 @@
 	<import resource="spring-applicationContext.xml" />
 	<import resource="spring-datasource.xml" />
 
-	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-		<property name="dataSource" ref="dataSource" />
-	</bean>
-	<bean id="jdbcService" class="com.cmsz.cmup.commons.jdbc.service.JdbcServiceImpl">
-		<property name="jdbcTemplate" ref="jdbcTemplate" />
+
+	<bean name="templateConfig" class="com.louis.fileGenerator.config.TemplateConfig"
+		init-method="init">
 	</bean>
 
 </beans>
