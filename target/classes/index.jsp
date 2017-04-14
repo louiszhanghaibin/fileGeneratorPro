@@ -47,7 +47,7 @@
 				<td align="right">fileGeneServiceId(文件生成服务ID，即文件配置中的id):<span style="color: red">*</span></td>
 				<td align="left">
 					<select name="idSelect" id="idSelect" >
-						<option value="id未赋值">下拉查询已配置文件id</option>					
+						<option value="(id未赋值)">下拉查询已配置文件id</option>					
 					</select>
 				</td>
 			</tr>
