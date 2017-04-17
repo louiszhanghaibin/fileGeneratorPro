@@ -9,6 +9,19 @@
 	<url>http://maven.apache.org</url>
 	<build>
 		<finalName>fileGeneratorPro</finalName>
+		<resources>
+			<!-- mapper 文件打入war包java目录 -->
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
