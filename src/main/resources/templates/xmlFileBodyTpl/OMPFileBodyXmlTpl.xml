@@ -2,7 +2,7 @@
 	<filter>
 		<type>sep</type>
 		<startWith>0079</startWith>
-		<seperator>\|</seperator>
+		<seperator>|</seperator>
 		<fixLength>0</fixLength>
 		<fields>
 			<field>

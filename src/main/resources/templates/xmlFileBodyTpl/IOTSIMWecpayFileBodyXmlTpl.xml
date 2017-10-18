@@ -3,7 +3,7 @@
 		<type>sep</type>
 		<startWith></startWith>
 		<fixRowNum>0</fixRowNum>
-		<seperator>\|</seperator>
+		<seperator>|</seperator>
 		<fixLength>0</fixLength>
 		<fields>
 			<field>

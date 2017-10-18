@@ -9,7 +9,9 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 import org.apache.commons.lang.RandomStringUtils;
+
 import com.louis.fileGenerator.handler.Handler;
 import com.louis.fileGenerator.xmlTplFileGene.template.Component;
 import com.louis.fileGenerator.xmlTplFileGene.template.FieldCfg;
@@ -91,10 +93,11 @@ public class XMLFileBodyGeneHandler implements Handler {
 	private void fileBodyGeneHandle(Map<String, String> vMap) throws Exception {
 		String msg = null;
 		int fileDataSum = Integer.parseInt(vMap.get("fileDataSum"));
+		int dataSum = Integer.parseInt(vMap.get("dataSum"));
 
 		try {
 			int fileDataNo = 0;
-			while (fileDataNo < fileDataSum) {
+			while (fileDataNo < fileDataSum && fileDataNo < dataSum) {
 				String data = "";
 
 				for (FieldCfg field : fileBodyFilter.getFields()) {

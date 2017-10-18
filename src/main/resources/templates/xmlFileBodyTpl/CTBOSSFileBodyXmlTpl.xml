@@ -2,7 +2,7 @@
 		<filter>
 			<type>sep</type>
 			<startWith></startWith>
-			<seperator>\|</seperator>
+			<seperator>|</seperator>
 			<fixLength>0</fixLength>
 			<fixRowNum>0</fixRowNum>
 			<fields>

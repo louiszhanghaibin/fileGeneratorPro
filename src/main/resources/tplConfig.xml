@@ -29,6 +29,7 @@
 		<fileNameTpl>/templates/fileNameTpl/MerchantChargePayFileNameTpl.txt</fileNameTpl>
 		<fileHeaderTpl>/templates/fileHeaderTpl/37fileHeaderTpl.txt</fileHeaderTpl>
 		<fileBodyXmlTpl>templates/xmlFileBodyTpl/OMPFileBodyXmlTpl.xml</fileBodyXmlTpl>
+		<fileEndTpl>/templates/fileEndTpl/37fileEndTpl.txt</fileEndTpl>
 		<busiLine>IOT_SIM</busiLine>
 		<merchantCode>0078</merchantCode>
 		<dataTable>IOT_SIM_OMP_DATA</dataTable>
@@ -39,6 +40,7 @@
 		<fileNameTpl>/templates/fileNameTpl/NewThirdpayFileNameTpl.txt</fileNameTpl>
 		<fileHeaderTpl>/templates/fileHeaderTpl/NewThirdpayFileHeader.txt</fileHeaderTpl>
 		<fileBodyXmlTpl>templates/xmlFileBodyTpl/IOTSIMAlipayFileBodyXmlTpl.xml</fileBodyXmlTpl>
+		<fileEndTpl>none</fileEndTpl>
 		<busiLine>IOT_SIM</busiLine>
 		<merchantCode>IOTSIMALIPAY</merchantCode>
 		<dataTable>THIRDPAY_DATA_PRO</dataTable>
@@ -49,6 +51,7 @@
 		<fileNameTpl>/templates/fileNameTpl/NewThirdpayFileNameTpl.txt</fileNameTpl>
 		<fileHeaderTpl>/templates/fileHeaderTpl/NewThirdpayFileHeader.txt</fileHeaderTpl>
 		<fileBodyXmlTpl>templates/xmlFileBodyTpl/IOTSIMWecpayFileBodyXmlTpl.xml</fileBodyXmlTpl>
+		<fileEndTpl>none</fileEndTpl>
 		<busiLine>IOT_SIM</busiLine>
 		<merchantCode>IOTSIMWECPAY</merchantCode>
 		<dataTable>THIRDPAY_DATA_PRO</dataTable>
@@ -59,6 +62,7 @@
 		<fileNameTpl>/templates/fileNameTpl/NewThirdpayFileNameTpl.txt</fileNameTpl>
 		<fileHeaderTpl>/templates/fileHeaderTpl/NewThirdpayFileHeader.txt</fileHeaderTpl>
 		<fileBodyXmlTpl>templates/xmlFileBodyTpl/IOTSIMUnionpayFileBodyXmlTpl.xml</fileBodyXmlTpl>
+		<fileEndTpl>none</fileEndTpl>
 		<busiLine>IOT_SIM</busiLine>
 		<merchantCode>IOTSIMUNIONPAY</merchantCode>
 		<dataTable>THIRDPAY_DATA_PRO</dataTable>
