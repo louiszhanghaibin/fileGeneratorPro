@@ -34,16 +34,6 @@
 		<dataTable>IOT_SIM_OMP_DATA</dataTable>
 	</fileType>
 	<fileType>
-		<id>IotSimOmpFile</id>
-		<fileTypeDesc>CMUP_omp_account(物联网缴费充值业务运管平台侧文件)</fileTypeDesc>
-		<fileNameTpl>/templates/fileNameTpl/MerchantChargePayFileNameTpl.txt</fileNameTpl>
-		<fileHeaderTpl>/templates/fileHeaderTpl/37fileHeaderTpl.txt</fileHeaderTpl>
-		<fileBodyXmlTpl>templates/xmlFileBodyTpl/OMPFileBodyXmlTpl.xml</fileBodyXmlTpl>
-		<busiLine>IOT_SIM</busiLine>
-		<merchantCode>0078</merchantCode>
-		<dataTable>IOT_SIM_OMP_DATA</dataTable>
-	</fileType>
-	<fileType>
 		<id>IotSimAlipayFile</id>
 		<fileTypeDesc>CMUP_alipay_account(物联网缴费充值支付宝文件)</fileTypeDesc>
 		<fileNameTpl>/templates/fileNameTpl/NewThirdpayFileNameTpl.txt</fileNameTpl>
