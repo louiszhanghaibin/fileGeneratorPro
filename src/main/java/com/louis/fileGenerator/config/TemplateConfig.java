@@ -38,7 +38,6 @@ public class TemplateConfig {
 	 * @time 20172017年4月12日上午11:19:35
 	 */
 	public void init() {
-		System.err.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx!!!!!!!!!!!!!!!!!!!S");
 
 		try {
 			XStream xs = new XStream();
@@ -54,8 +53,5 @@ public class TemplateConfig {
 			// TODO: handle exception
 			throw e;
 		}
-
-		System.err.println(
-				"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff!!!!!!!!!!!!!!!!!!!!!!!!!!");
 	}
 }

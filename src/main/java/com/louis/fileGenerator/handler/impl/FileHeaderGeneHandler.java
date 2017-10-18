@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.List;
 import java.util.Map;
+
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
@@ -12,6 +13,7 @@ import org.apache.velocity.exception.VelocityException;
 import org.apache.velocity.runtime.RuntimeConstants;
 import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 import org.springframework.stereotype.Component;
+
 import com.louis.fileGenerator.handler.Handler;
 
 @Component("fileHeaderGeneHandler")
@@ -50,6 +52,7 @@ public class FileHeaderGeneHandler implements Handler {
 			context.put("TDay", vMap.get("TDay"));
 			context.put("busiLine", vMap.get("busiLine"));
 			context.put("province", vMap.get("province"));
+			context.put("merchantCode", vMap.get("merchantCode"));
 
 			String fileHeader = null;
 			try {

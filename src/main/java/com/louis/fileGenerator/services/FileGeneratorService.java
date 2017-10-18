@@ -33,6 +33,7 @@ public class FileGeneratorService extends AbstractBasicService implements BasicS
 				vMap.put("fileEndTpl", fileTypeCfg.getFileEndTpl());
 				vMap.put("fileBodyXmlTpl", fileTypeCfg.getFileBodyXmlTpl());
 				vMap.put("busiLine", fileTypeCfg.getBusiLine());
+				vMap.put("merchantCode", fileTypeCfg.getMerchantCode());
 				count++;
 			}
 		}

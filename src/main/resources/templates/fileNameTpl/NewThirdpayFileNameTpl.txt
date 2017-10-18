@@ -1,0 +1,1 @@
+${merchantCode}${settleDate}${fileNo}.CMCC

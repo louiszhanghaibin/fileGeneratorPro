@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.StringWriter;
 import java.util.List;
 import java.util.Map;
+
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
@@ -45,6 +46,7 @@ public class FileNameGeneHandler implements Handler {
 			context.put("settleDate", vMap.get("settleDate"));
 			context.put("busiLine", vMap.get("busiLine"));
 			context.put("province", vMap.get("province"));
+			context.put("merchantCode", vMap.get("merchantCode"));
 
 			String fileName = null;
 			try {

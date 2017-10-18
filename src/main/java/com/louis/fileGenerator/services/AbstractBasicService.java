@@ -5,8 +5,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Value;
+
 import com.louis.fileGenerator.handler.Handler;
 import com.louis.fileGenerator.handler.impl.XMLFileBodyGeneHandler;
 
@@ -38,6 +41,7 @@ public abstract class AbstractBasicService {
 		String province = variableMap.get("province");
 		String dataTable = variableMap.get("dataTable");
 		String fileTypeDesc = variableMap.get("fileTypeDesc");
+		String merchantCode = variableMap.get("merchantCode");
 
 		String fileNameTpl = variableMap.get("fileNameTpl");
 		String fileHeaderTpl = variableMap.get("fileHeaderTpl");
@@ -72,6 +76,10 @@ public abstract class AbstractBasicService {
 			fileSumString = String.format("%03d", fileSum);
 		}
 
+		if (merchantCode == null || merchantCode.length() == 0) {
+			merchantCode = busiLine;
+		}
+
 		int fileNo = 1;
 
 		while (fileSum >= fileNo) {
@@ -79,6 +87,7 @@ public abstract class AbstractBasicService {
 			vMap.put("settleDate", settleDate);
 			vMap.put("busiLine", busiLine);
 			vMap.put("province", province);
+			vMap.put("merchantCode", merchantCode);
 
 			vMap.put("fileSum", fileSumString);
 			vMap.put("fileDataSum", fileDataSumString);

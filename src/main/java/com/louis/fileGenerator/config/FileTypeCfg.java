@@ -22,6 +22,15 @@ public class FileTypeCfg {
 	private String fileEndTpl = null;
 	private String dataTable = null;
 	private String busiLine = null;
+	private String merchantCode = null;
+
+	public String getMerchantCode() {
+		return merchantCode;
+	}
+
+	public void setMerchantCode(String merchantCode) {
+		this.merchantCode = merchantCode;
+	}
 
 	public String getBusiLine() {
 		return busiLine;
