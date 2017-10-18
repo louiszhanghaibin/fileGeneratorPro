@@ -17,7 +17,8 @@ public class FileGeneratorTest extends BaseJunit {
 	@Test
 	public void test() throws Exception {
 		Map<String, String> vMap = new HashMap<>();
-		vMap.put("id", "MGAlipayFile");
+		vMap.put("id", "IotSimAlipayFile");
+		vMap.put("settleDate", "20171018");
 
 		try {
 			fileGeneratorService.doService(vMap);

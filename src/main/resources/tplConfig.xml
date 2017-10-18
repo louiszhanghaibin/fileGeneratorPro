@@ -57,7 +57,7 @@
 		<dataTable>THIRDPAY_DATA_PRO</dataTable>
 	</fileType>
 	<fileType>
-		<id>IotSimWecpayFile</id>
+		<id>IotSimUnionpayFile</id>
 		<fileTypeDesc>CMUP_unionpay_account(物联网缴费充值银联文件)</fileTypeDesc>
 		<fileNameTpl>/templates/fileNameTpl/NewThirdpayFileNameTpl.txt</fileNameTpl>
 		<fileHeaderTpl>/templates/fileHeaderTpl/NewThirdpayFileHeader.txt</fileHeaderTpl>

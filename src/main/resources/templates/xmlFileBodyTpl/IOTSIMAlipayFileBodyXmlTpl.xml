@@ -48,7 +48,7 @@
 			</field>
 			<field>
 				<name>THIRDPAY_SERVICE_CHARGE_RATE</name>
-				<fixValue></fixValue>
+				<fixValue>0.006</fixValue>
 				<regx>^\d{1,4}(\.\d{1,6})?$</regx>
 			</field>
 			<field>
