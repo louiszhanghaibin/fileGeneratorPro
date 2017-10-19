@@ -52,7 +52,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td align="right">fileGeneMode(文件生成服务模式ID):<span style="color: red">*</span></td>
+				<td align="right">fileGeneMode(文件生成模式):<span style="color: red">*</span></td>
 				<td align="left"><input  id="fileGeneMode" name="fileGeneMode" value="byXML"></td>
 			</tr>
 			<tr>
