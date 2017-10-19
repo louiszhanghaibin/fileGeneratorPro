@@ -109,6 +109,7 @@
 				<name>RESERVE2</name>
 				<fixValue></fixValue>
 				<regx>^.{0,1024}|\s*$</regx>
+				<isEnd>yes</isEnd>
 			</field>
 		</fields>
 	</filter>

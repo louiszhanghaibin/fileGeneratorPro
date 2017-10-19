@@ -31,7 +31,7 @@
 		<fileBodyXmlTpl>templates/xmlFileBodyTpl/OMPFileBodyXmlTpl.xml</fileBodyXmlTpl>
 		<fileEndTpl>/templates/fileEndTpl/37fileEndTpl.txt</fileEndTpl>
 		<busiLine>IOT_SIM</busiLine>
-		<merchantCode>0078</merchantCode>
+		<merchantCode>0079</merchantCode>
 		<dataTable>IOT_SIM_OMP_DATA</dataTable>
 	</fileType>
 	<fileType>
