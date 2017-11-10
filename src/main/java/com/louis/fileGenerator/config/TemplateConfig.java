@@ -44,9 +44,13 @@ public class TemplateConfig {
 			xs.setMode(XStream.NO_REFERENCES);
 			xs.processAnnotations(new Class[] { TplConfigCfg.class, FileTypeCfg.class });
 
+			System.out.println("开始解析服务配置文件【tplConfig.xml】");
+
 			InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("tplConfig.xml");
 			TplConfigCfg tplConfigCfg;
 			tplConfigCfg = (TplConfigCfg) xs.fromXML(inputStream);
+
+			System.out.println("服务配置文件【tplConfig.xml】解析成功！");
 
 			this.setFileTypeCfgs(tplConfigCfg.getFileTypes());
 		} catch (Exception e) {
