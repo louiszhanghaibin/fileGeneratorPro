@@ -167,6 +167,8 @@ public class FileGeneratorController {
 			fileTypesJson.append("\"},");
 		}
 
+		System.out.println("成功获取服务配置！");
+
 		return fileTypesJson.toString().substring(0, fileTypesJson.toString().lastIndexOf(",")) + "]";
 	}
 
